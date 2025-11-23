@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naturegro Seeds | Grow Fresh, Grow Better</title>
+  <meta name="description"
+    content="Premium vegetable seeds for sustainable farming. High quality, high yield, and organic varieties available." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <img src="/src/assets/logo.png" alt="Naturegro Seeds Logo" class="logo-img">
+        <span>Naturegro<span class="logo-accent">Seeds</span></span>
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <img src="/src/assets/hero-banner.png" alt="Lush vegetable farm" />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content fade-in">
+        <h1>Grow Fresh, <br>Grow Better</h1>
+        <p>Premium vegetable seeds for your sustainable garden and farm. Experience the joy of high-quality yields.</p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-primary">Explore Seeds</a>
+          <a href="#about" class="btn btn-outline">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content fade-in">
+            <h2 class="section-title" style="text-align: left;">Cultivating Quality</h2>
+            <p>At Naturegro Seeds, we believe that great food starts with great seeds. For over three years, we have
+              been dedicated to providing farmers and gardeners with the highest quality, non-GMO vegetable seeds.</p>
+            <p>Our mission is to promote sustainable agriculture and help you grow fresh, nutritious produce right in
+              your backyard or farm.</p>
+
+            <!-- <p>NATUREGRO SEEDS PVT LTD is committed to advancing agricultural excellence through innovative research,
+              quality seed production, and sustainable processing practices. By delivering superior seeds and empowering
+              India's farming community, we strive to foster growth, productivity, and food security with cutting-edge
+              solutions and trusted expertise.</p> -->
+
+            <ul class="about-features">
+              <li>🌱 99% Germination Rate</li>
+              <li>🌍 Sustainably Sourced</li>
+              <li>👨‍🌾 Trusted by 10,000+ Farmers</li>
+            </ul>
+          </div>
+          <div class="about-image fade-in">
+            <!-- Placeholder for about image if needed, or use CSS background -->
+            <div class="about-img-placeholder">
+              <img src="/src/assets/gallery-farmer.png" alt="Happy Farmer"
+                style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products">
+      <div class="container">
+        <h2 class="section-title">Our Premium Seeds</h2>
+        <p class="section-subtitle">Hand-picked varieties for the best harvest.</p>
+
+        <!-- Categories (Simple Filter UI) -->
+        <div class="product-filters fade-in">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="leafy">Leafy Veg</button>
+          <button class="filter-btn" data-filter="root">Root Veg</button>
+          <button class="filter-btn" data-filter="bulb">Bulb Veg</button>
+          <button class="filter-btn" data-filter="stem">Stem Veg</button>
+          <button class="filter-btn" data-filter="flower">Flower Veg</button>
+          <button class="filter-btn" data-filter="fruit">Fruit Veg</button>
+          <button class="filter-btn" data-filter="pod">Seed/Pod Veg</button>
+        </div>
+
+        <div class="product-grid">
+          <!-- Product Card 1 (Fruit) -->
+          <div class="product-card fade-in" data-category="fruit">
+            <div class="product-img">
+              <img src="/src/assets/product-tomato.png" alt="Tomato Seeds">
+            </div>
+            <div class="product-info">
+              <h3>Ruby Red Tomato</h3>
+              <p class="product-desc">Juicy, sweet, and perfect for salads.</p>
+              <div class="product-meta">
+                <span>☀️ Full Sun</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=tomato" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+          <!-- Product Card 2 (Root) -->
+          <div class="product-card fade-in" data-category="root">
+            <div class="product-img">
+              <img src="/src/assets/product-carrot.png" alt="Carrot Seeds">
+            </div>
+            <div class="product-info">
+              <h3>Crunchy Orange Carrot</h3>
+              <p class="product-desc">Sweet, crisp, and rich in Vitamin A.</p>
+              <div class="product-meta">
+                <span>☀️ Full Sun</span>
+                <span>💧 Moderate</span>
+              </div>
+              <a href="/product.html?id=carrot" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+          <!-- Product Card 3 (Leafy) -->
+          <div class="product-card fade-in" data-category="leafy">
+            <div class="product-img">
+              <img src="/src/assets/product-spinach.png" alt="Spinach Seeds">
+            </div>
+            <div class="product-info">
+              <h3>Giant Spinach</h3>
+              <p class="product-desc">Iron-rich greens for healthy meals.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Frequent</span>
+              </div>
+              <a href="/product.html?id=spinach" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+          <!-- Product Card 4 (Bulb) -->
+          <div class="product-card fade-in" data-category="bulb">
+            <div class="product-img">
+              <img src="/src/assets/product-onion.png" alt="Onion Seeds">
+            </div>
+            <div class="product-info">
+              <h3>Red Onion</h3>
+              <p class="product-desc">Pungent and flavorful, stores well.</p>
+              <div class="product-meta">
+                <span>☀️ Full Sun</span>
+                <span>💧 Moderate</span>
+              </div>
+              <a href="/product.html?id=onion" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+          <!-- Product Card 5 (Stem) -->
+          <div class="product-card fade-in" data-category="stem">
+            <div class="product-img">
+              <img src="/src/assets/product-spinach.png" alt="Celery Seeds"> <!-- Placeholder -->
+            </div>
+            <div class="product-info">
+              <h3>Crisp Celery</h3>
+              <p class="product-desc">Crunchy stalks, perfect for snacking.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Frequent</span>
+              </div>
+              <a href="/product.html?id=celery" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+          <!-- Product Card 6 (Flower) -->
+          <div class="product-card fade-in" data-category="flower">
+            <div class="product-img">
+              <img src="/src/assets/product-spinach.png" alt="Broccoli Seeds"> <!-- Placeholder -->
+            </div>
+            <div class="product-info">
+              <h3>Green Broccoli</h3>
+              <p class="product-desc">Nutrient-packed heads, easy to grow.</p>
+              <div class="product-meta">
+                <span>☀️ Full Sun</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=broccoli" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+          <!-- Product Card 7 (Pod) -->
+          <div class="product-card fade-in" data-category="pod">
+            <div class="product-img">
+              <img src="/src/assets/product-spinach.png" alt="Green Peas Seeds"> <!-- Placeholder -->
+            </div>
+            <div class="product-info">
+              <h3>Sweet Green Peas</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=peas" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2 class="section-title">From Seed to Harvest</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item fade-in">
+            <img src="/src/assets/gallery-seedling.png" alt="Seedling Sprouting">
+          </div>
+          <div class="gallery-item fade-in">
+            <img src="/src/assets/gallery-farmer.png" alt="Farmer with Harvest">
+          </div>
+          <div class="gallery-item fade-in">
+            <img src="/src/assets/hero-banner.png" alt="Farm Field">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <h2 class="section-title">What Farmers Say</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card fade-in">
+            <p class="testimonial-text">"The germination rate is incredible. I've never had such a bountiful harvest
+              before. Highly recommended!"</p>
+            <div class="testimonial-author">
+              <h4>Rajesh Kumar</h4>
+              <span>Organic Farmer</span>
+            </div>
+          </div>
+          <div class="testimonial-card fade-in">
+            <p class="testimonial-text">"Naturegro seeds are the best in the market. The quality of the vegetables is
+              top-notch."</p>
+            <div class="testimonial-author">
+              <h4>Sarah Jenkins</h4>
+              <span>Home Gardener</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-container">
+          <div class="contact-info fade-in">
+            <h3>Contact Information</h3>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <p class="contact-text">
+                23 Brahmaputra, Jeevan Geet Colony, <br>
+                (Vill. Alipur Gijhauri) <br>
+                Bulandshahr - Meerut NH-334, <br>
+                Bulandshahr Uttar Pradesh - 203001
+              </p>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <p class="contact-text">+91 98765 43210</p>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <p class="contact-text">naturegroseeds@gmail.com</p>
+            </div>
+            <div class="social-links">
+              <a href="#">Facebook</a>
+              <a href="#">Instagram</a>
+              <a href="#">Twitter</a>
+            </div>
+            <div class="map-placeholder">
+              <!-- Map Placeholder -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3507.806529062868!2d77.81356199999999!3d28.455248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDI3JzE4LjkiTiA3N8KwNDgnNDguOCJF!5e0!3m2!1sen!2sin!4v1763881299966!5m2!1sen!2sin"
+                width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <form class="contact-form fade-in" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Naturegro Seeds. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

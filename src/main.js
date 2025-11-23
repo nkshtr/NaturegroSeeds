@@ -111,8 +111,35 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Thank you for your message! We will get back to you soon.');
-    contactForm.reset();
+
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerText;
+    submitBtn.innerText = 'Sending...';
+    submitBtn.disabled = true;
+
+    const formData = new FormData(contactForm);
+    const data = Object.fromEntries(formData.entries());
+
+    fetch('https://script.google.com/macros/s/AKfycbxnJSqF6xhUCCVXsq4R7R0hk8s4Nu1eySVnJ3cnOdVF-pIbPpQP2pYoWS3AKIvZo6Ebog/exec', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'text/plain'
+      },
+      body: JSON.stringify(data)
+    })
+      .then(() => {
+        alert('Thank you for your message! We will get back to you soon.');
+        contactForm.reset();
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Something went wrong. Please try again later.');
+      })
+      .finally(() => {
+        submitBtn.innerText = originalText;
+        submitBtn.disabled = false;
+      });
   });
 }
 

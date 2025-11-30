@@ -3,7 +3,7 @@
     margin-top: 2rem;
     padding: 1.5rem;
     background-color: #f9f9f9;
-    border-radius: var(--border-radius-md);
+    border-radius: var(--radius-md);
     border-left: 4px solid var(--color-primary);
 }
 
@@ -20,7 +20,7 @@
 .practice-block h4 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    color: var(--color-text-dark);
+    color: var(--color-text);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -36,11 +36,21 @@
     font-size: 0.95rem;
 }
 
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
+}
+
 .practices-table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    /* Margin handled by wrapper */
     font-size: 0.9rem;
+    min-width: 400px;
+    /* Ensure table doesn't get too squished */
 }
 
 .practices-table th,
@@ -74,7 +84,7 @@
     .practices-table {
         font-size: 0.8rem;
     }
-    
+
     .practices-table th,
     .practices-table td {
         padding: 0.5rem;

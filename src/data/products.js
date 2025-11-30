@@ -3,7 +3,7 @@ export const products = [
         id: 'tomato',
         name: 'Ruby Red Tomato',
         category: 'fruit',
-        image: '/src/assets/product-tomato.png',
+        image: '/assets/product-tomato.png',
         description: 'Our Ruby Red Tomatoes are a classic favorite for any garden. These indeterminate vines produce an abundance of medium-sized, deep red fruits that are bursting with flavor. Perfect for slicing, salads, and canning.',
         details: {
             temperature: '20-90°C',
@@ -22,7 +22,7 @@ export const products = [
         id: 'carrot',
         name: 'Crunchy Orange Carrot',
         category: 'root',
-        image: '/src/assets/product-carrot.png',
+        image: '/assets/product-carrot.png',
         description: 'Grow crisp, sweet carrots right in your backyard. These roots are rich in beta-carotene and have a satisfying crunch. They store well and are excellent for roasting, juicing, or eating raw.',
         details: {
             temperature: '15-90°C',
@@ -41,7 +41,7 @@ export const products = [
         id: 'spinach',
         name: 'Giant Spinach',
         category: 'leafy',
-        image: '/src/assets/product-spinach.png',
+        image: '/assets/product-spinach.png',
         description: 'A powerhouse of nutrition, our Giant Spinach produces large, dark green leaves that are tender and flavorful. It is slow to bolt and can be harvested as baby greens or full-sized leaves.',
         details: {
             temperature: '10-22°C',
@@ -60,7 +60,7 @@ export const products = [
         id: 'onion',
         name: 'Red Onion',
         category: 'bulb',
-        image: '/src/assets/product-onion.png',
+        image: '/assets/product-onion.png',
         description: 'These Red Onions are known for their vibrant color and mild to pungent flavor. They are excellent for salads, grilling, and pickling. Long storage life makes them a staple for any pantry.',
         details: {
             temperature: '12-24°C',
@@ -78,7 +78,7 @@ export const products = [
         id: 'celery',
         name: 'Crisp Celery',
         category: 'stem',
-        image: '/src/assets/product-spinach.png', // Placeholder
+        image: '/assets/product-spinach.png', // Placeholder
         description: 'Grow your own crunchy celery stalks. This variety is selected for its crisp texture and lack of stringiness. Essential for soups, stews, and healthy snacking.',
         details: {
             temperature: '15-21°C',
@@ -96,7 +96,7 @@ export const products = [
         id: 'broccoli',
         name: 'Green Broccoli',
         category: 'flower',
-        image: '/src/assets/product-spinach.png', // Placeholder
+        image: '/assets/product-spinach.png', // Placeholder
         description: 'Harvest nutrient-packed broccoli heads from your garden. This vigorous variety produces large central heads and plenty of side shoots after the main harvest.',
         details: {
             temperature: '15-20°C',
@@ -114,7 +114,7 @@ export const products = [
         id: 'peas',
         name: 'Sweet Green Peas',
         category: 'pod',
-        image: '/src/assets/product-spinach.png', // Placeholder
+        image: '/assets/product-spinach.png', // Placeholder
         description: 'Nothing beats the taste of fresh peas straight from the pod. These vines are prolific producers of sweet, tender peas. Great for freezing or eating fresh.',
         details: {
             temperature: '13-18°C',
@@ -133,7 +133,7 @@ export const products = [
         id: 'cauliflower',
         name: 'F1 Hybrid Cauliflower',
         category: 'flower',
-        image: '/src/assets/product-cauliflower.png',
+        image: '/assets/product-cauliflower.png',
         description: 'Our premium F1 Hybrid Cauliflower varieties are selected for their adaptability to different seasons and superior curd quality. Whether for summer, rainy, or winter harvest, we have the perfect variety for your needs.',
         practices: {
             soilClimate: {
@@ -177,7 +177,7 @@ export const products = [
         id: 'radish',
         name: 'Radish',
         category: 'root',
-        image: '/src/assets/product-f1-radish.png',
+        image: '/assets/product-f1-radish.png',
         description: 'Our premium Radish varieties are known for their high yield, early maturity, and adaptability to various seasons. From the heat-tolerant Aarya-33 to the versatile Moonlight, we offer radishes with excellent root quality and crisp texture.',
         details: {
             temperature: '10-30°C',
@@ -209,7 +209,7 @@ export const products = [
         id: 'op-radish',
         name: 'OP Radish',
         category: 'root',
-        image: '/src/assets/product-op-radish.png',
+        image: '/assets/product-op-radish.png',
         description: 'Our Open-Pollinated (OP) Radish varieties are selected for their dual-purpose use, fast maturity, and adaptability. Whether you need the spinach-like leaves of Palak-Patta or the heat tolerance of Pusa Chetki, these varieties offer excellent reliability for home and commercial growers.',
         details: {
             temperature: '10-35°C',
@@ -237,7 +237,7 @@ export const products = [
         id: 'bhindi',
         name: 'Bhindi (Okra)',
         category: 'pod',
-        image: '/src/assets/product-bhindi.png',
+        image: '/assets/product-bhindi.png',
         description: 'Our F1 Hybrid Bhindi (Okra) varieties are expertly tailored for year-round cultivation, offering consistent yields and premium fruit quality. With high disease tolerance and early harvest, these varieties are perfect for both fresh market and commercial farming.',
         details: {
             temperature: '20-35°C',

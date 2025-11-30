@@ -178,6 +178,7 @@ button {
   box-shadow: var(--shadow-sm);
   z-index: 1000;
   padding: var(--spacing-sm) 0;
+  view-transition-name: main-header;
 }
 
 .header-container {
@@ -199,6 +200,7 @@ button {
 .logo-img {
   height: 50px;
   width: auto;
+  view-transition-name: logo;
 }
 
 .logo-accent {

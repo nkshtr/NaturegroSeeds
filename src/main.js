@@ -273,9 +273,24 @@ function attachNavigationListeners() {
       link.addEventListener('click', async (e) => {
         e.preventDefault();
         const url = href;
+        const targetPath = url.split('#')[0];
+        const currentPath = window.location.pathname;
 
-        // If it's a hash link to another page (e.g. /index.html#contact)
-        // We need to handle it carefully.
+        // Check if it's a link to the same page
+        if (targetPath === currentPath || (targetPath === '/index.html' && currentPath === '/') || (targetPath === '/' && currentPath === '/index.html')) {
+          if (url.includes('#')) {
+            const hash = url.split('#')[1];
+            const el = document.getElementById(hash);
+            if (el) {
+              el.scrollIntoView({ behavior: 'smooth' });
+              window.history.pushState({}, '', url);
+            }
+          } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.history.pushState({}, '', url);
+          }
+          return;
+        }
 
         try {
           // Fetch the new page
@@ -331,8 +346,17 @@ function attachNavigationListeners() {
 }
 
 // Handle Back/Forward Browser Buttons
-window.addEventListener('popstate', () => {
-  window.location.reload(); // Simplest way to handle history for now
+// Handle Back/Forward Browser Buttons
+window.addEventListener('popstate', (event) => {
+  console.log('Popstate fired:', event);
+  // window.location.reload(); // Commented out to test if this is the cause
+});
+
+// Debug Explore Seeds
+document.addEventListener('click', (e) => {
+  if (e.target.innerText === 'Explore Seeds') {
+    console.log('Explore Seeds clicked', e.target.getAttribute('href'));
+  }
 });
 
 // Initial Load

@@ -85,7 +85,7 @@
           <div class="about-image fade-in">
             <!-- Placeholder for about image if needed, or use CSS background -->
             <div class="about-img-placeholder">
-              <img src="/assets/gallery-farmer.png" alt="Happy Farmer"
+              <img src="/assets/farmer_v1.png" alt="Happy Farmer"
                 style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
             </div>
           </div>
@@ -109,22 +109,26 @@
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="leafy">Leafy Veg</button>
             <button class="filter-btn" data-filter="root">Root Veg</button>
-            <button class="filter-btn" data-filter="bulb">Bulb Veg</button>
-            <button class="filter-btn" data-filter="stem">Stem Veg</button>
+            <!-- <button class="filter-btn" data-filter="bulb">Bulb Veg</button>
+            <button class="filter-btn" data-filter="stem">Stem Veg</button> -->
             <button class="filter-btn" data-filter="flower">Flower Veg</button>
             <button class="filter-btn" data-filter="fruit">Fruit Veg</button>
             <button class="filter-btn" data-filter="pod">Seed/Pod Veg</button>
+            <button class="filter-btn" data-filter="Gourds">Gourds</button>
+            <button class="filter-btn" data-filter="Melons">Melons</button>
           </div>
         </div>
 
         <div class="product-grid">
-          <!-- Product Card 1 (Fruit) -->
+          <!-- Product Cards -->
+
+          <!-- Tomato -->
           <div class="product-card fade-in" data-category="fruit">
             <div class="product-img">
-              <img src="/assets/product-tomato.png" alt="Tomato Seeds">
+              <img src="/assets/img_tomato_16x9.png" alt="Tomato">
             </div>
             <div class="product-info">
-              <h3>Ruby Red Tomato</h3>
+              <h3>F1 Tomato</h3>
               <p class="product-desc">Juicy, sweet, and perfect for salads.</p>
               <div class="product-meta">
                 <span>☀️ Full Sun</span>
@@ -134,13 +138,31 @@
             </div>
           </div>
 
-          <!-- Product Card 2 (Root) -->
-          <div class="product-card fade-in" data-category="root">
+
+          <!-- Bhindi (Okra) -->
+          <div class="product-card fade-in" data-category="fruit">
             <div class="product-img">
-              <img src="/assets/product-carrot.png" alt="Carrot Seeds">
+              <img src="/assets/product-bhindi.png" alt="Bhindi (Okra)">
             </div>
             <div class="product-info">
-              <h3>Crunchy Orange Carrot</h3>
+              <h3>F1 Bhindi (Okra)</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=bhindi" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Carrot -->
+          <div class="product-card fade-in" data-category="root">
+            <div class="product-img">
+              <img src="/assets/product-carrot.png" alt="Carrot">
+            </div>
+            <div class="product-info">
+              <h3>Carrot</h3>
               <p class="product-desc">Sweet, crisp, and rich in Vitamin A.</p>
               <div class="product-meta">
                 <span>☀️ Full Sun</span>
@@ -150,94 +172,14 @@
             </div>
           </div>
 
-          <!-- Product Card 3 (Leafy) -->
-          <div class="product-card fade-in" data-category="leafy">
-            <div class="product-img">
-              <img src="/assets/product-spinach.png" alt="Spinach Seeds">
-            </div>
-            <div class="product-info">
-              <h3>Giant Spinach</h3>
-              <p class="product-desc">Iron-rich greens for healthy meals.</p>
-              <div class="product-meta">
-                <span>⛅ Partial Shade</span>
-                <span>💧 Frequent</span>
-              </div>
-              <a href="/product.html?id=spinach" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
 
-          <!-- Product Card 4 (Bulb) -->
-          <div class="product-card fade-in" data-category="bulb">
-            <div class="product-img">
-              <img src="/assets/product-onion.png" alt="Onion Seeds">
-            </div>
-            <div class="product-info">
-              <h3>Red Onion</h3>
-              <p class="product-desc">Pungent and flavorful, stores well.</p>
-              <div class="product-meta">
-                <span>☀️ Full Sun</span>
-                <span>💧 Moderate</span>
-              </div>
-              <a href="/product.html?id=onion" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-
-          <!-- Product Card 5 (Stem) -->
-          <div class="product-card fade-in" data-category="stem">
-            <div class="product-img">
-              <img src="/assets/product-spinach.png" alt="Celery Seeds"> <!-- Placeholder -->
-            </div>
-            <div class="product-info">
-              <h3>Crisp Celery</h3>
-              <p class="product-desc">Crunchy stalks, perfect for snacking.</p>
-              <div class="product-meta">
-                <span>⛅ Partial Shade</span>
-                <span>💧 Frequent</span>
-              </div>
-              <a href="/product.html?id=celery" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-
-          <!-- Product Card 6 (Flower) -->
+          <!-- F1 Cauliflower -->
           <div class="product-card fade-in" data-category="flower">
             <div class="product-img">
-              <img src="/assets/product-spinach.png" alt="Broccoli Seeds"> <!-- Placeholder -->
+              <img src="/assets/img_cauliflower_16x9_v2.png" alt="Cauliflower">
             </div>
             <div class="product-info">
-              <h3>Green Broccoli</h3>
-              <p class="product-desc">Nutrient-packed heads, easy to grow.</p>
-              <div class="product-meta">
-                <span>☀️ Full Sun</span>
-                <span>💧 Regular</span>
-              </div>
-              <a href="/product.html?id=broccoli" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-
-          <!-- Product Card 7 (Pod) -->
-          <div class="product-card fade-in" data-category="pod">
-            <div class="product-img">
-              <img src="/assets/product-spinach.png" alt="Green Peas Seeds"> <!-- Placeholder -->
-            </div>
-            <div class="product-info">
-              <h3>Sweet Green Peas</h3>
-              <p class="product-desc">Sweet and tender, grow on vines.</p>
-              <div class="product-meta">
-                <span>⛅ Partial Shade</span>
-                <span>💧 Regular</span>
-              </div>
-              <a href="/product.html?id=peas" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-
-
-          <!-- Product Card 8 (Flower) -->
-          <div class="product-card fade-in" data-category="flower">
-            <div class="product-img">
-              <img src="/assets/product-cauliflower.png" alt="Cauliflower Seeds"> <!-- Placeholder -->
-            </div>
-            <div class="product-info">
-              <h3>F1 Hybrid Cauliflower</h3>
+              <h3>F1 Cauliflower</h3>
               <p class="product-desc">Premium varieties for all seasons.</p>
               <div class="product-meta">
                 <span>☀️ Full Sun</span>
@@ -247,10 +189,113 @@
             </div>
           </div>
 
-          <!-- Product Card 9 (Radish) -->
+
+          <!-- OP Cauliflower (Research)-->
+          <div class="product-card fade-in" data-category="flower">
+            <div class="product-img">
+              <img src="/assets/img_cauliflower_16x9_v3.png" alt="Cauliflower">
+            </div>
+            <div class="product-info">
+              <h3>OP Cauliflower (Research)</h3>
+              <p class="product-desc">Premium varieties for all seasons.</p>
+              <div class="product-meta">
+                <span>☀️ Full Sun</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=op-cauliflower" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Broccoli -->
+          <div class="product-card fade-in" data-category="flower">
+            <div class="product-img">
+              <img src="/assets/product-broccoli.png" alt="Broccoli">
+            </div>
+            <div class="product-info">
+              <h3>F1 Broccoli</h3>
+              <p class="product-desc">Nutrient-packed heads, easy to grow.</p>
+              <div class="product-meta">
+                <span>☀️ Full Sun</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=broccoli" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Cabbage -->
+          <div class="product-card fade-in" data-category="fruit">
+            <div class="product-img">
+              <img src="/assets/img_cabbage.png" alt="Cabbage">
+            </div>
+            <div class="product-info">
+              <h3>F1 Cabbage</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=cabbage" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- watermelons -->
+          <div class="product-card fade-in" data-category="Melons">
+            <div class="product-img">
+              <img src="/assets/img_watermelon_16x9.png" alt="F1 Watermelon">
+            </div>
+            <div class="product-info">
+              <h3>F1 Watermelon</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=watermelon" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Muskmelon -->
+          <div class="product-card fade-in" data-category="fruit">
+            <div class="product-img">
+              <img src="/assets/img_muskmelon_16x9.png" alt="F1 Muskmelon">
+            </div>
+            <div class="product-info">
+              <h3>F1 Muskmelon</h3>
+              <p class="product-desc">Sweet, aromatic, and juicy.</p>
+              <div class="product-meta">
+                <span>☀️ Full Sun</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=muskmelon" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- F1-Pumpkin -->
+          <div class="product-card fade-in" data-category="Gourds">
+            <div class="product-img">
+              <img src="/assets/img_pumpkin_16x9.png" alt="F1-Pumpkin">
+            </div>
+            <div class="product-info">
+              <h3>F1 Pumpkin</h3>
+              <p class="product-desc">Crunchy stalks, perfect for snacking.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Frequent</span>
+              </div>
+              <a href="/product.html?id=F1-Pumpkin" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- F1-Radish -->
           <div class="product-card fade-in" data-category="root">
             <div class="product-img">
-              <img src="/assets/out-product-f1-radish.png" alt="F1-Radish"> <!-- Placeholder -->
+              <img src="/assets/out-product-f1-radish.png" alt="F1-Radish">
             </div>
             <div class="product-info">
               <h3>F1 Radish</h3>
@@ -263,10 +308,11 @@
             </div>
           </div>
 
-          <!-- Product Card 10 (Radish) -->
+
+          <!-- OP-Radish -->
           <div class="product-card fade-in" data-category="root">
             <div class="product-img">
-              <img src="/assets/product-op-radish.png" alt="OP-Radish"> <!-- Placeholder -->
+              <img src="/assets/product-op-radish.png" alt="OP-Radish">
             </div>
             <div class="product-info">
               <h3>OP Radish</h3>
@@ -279,21 +325,331 @@
             </div>
           </div>
 
-          <!-- Product Card 10 (Radish) -->
+
+          <!-- Cucumber -->
           <div class="product-card fade-in" data-category="fruit">
             <div class="product-img">
-              <img src="/assets/product-bhindi.png" alt="Bhindi (Okra)"> <!-- Placeholder -->
+              <img src="/assets/img_cucumber_16x9.png" alt="Cucumber">
             </div>
             <div class="product-info">
-              <h3>F1 Bhindi (Okra)</h3>
+              <h3>F1 Cucumber</h3>
               <p class="product-desc">Sweet and tender, grow on vines.</p>
               <div class="product-meta">
                 <span>⛅ Partial Shade</span>
                 <span>💧 Regular</span>
               </div>
-              <a href="/product.html?id=bhindi" class="btn btn-primary btn-sm">View Details</a>
+              <a href="/product.html?id=cucumber" class="btn btn-primary btn-sm">View Details</a>
             </div>
           </div>
+
+
+          <!-- Bottle Gourd -->
+          <div class="product-card fade-in" data-category="Gourds">
+            <div class="product-img">
+              <img src="/assets/img_bottle_gourd_16x9_v2.png" alt="Bottle Gourd">
+            </div>
+            <div class="product-info">
+              <h3>F1 Bottle Gourd</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=bottle-gourd" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Bitter Gourd -->
+          <div class="product-card fade-in" data-category="Gourds">
+            <div class="product-img">
+              <img src="/assets/img_bitter_gourd_16x9.png" alt="Bitter Gourd">
+            </div>
+            <div class="product-info">
+              <h3>F1 Bitter Gourd</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=bitter-gourd" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Sponge Gourd -->
+          <div class="product-card fade-in" data-category="Gourds">
+            <div class="product-img">
+              <img src="/assets/img_sponge_gourd_16x9.png" alt="Sponge Gourd">
+            </div>
+            <div class="product-info">
+              <h3>F1 Sponge Gourd</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=sponge-gourd" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Ridge Gourd -->
+          <div class="product-card fade-in" data-category="Gourds">
+            <div class="product-img">
+              <img src="/assets/img_ridge_gourd_16x9.png" alt="Ridge Gourd">
+            </div>
+            <div class="product-info">
+              <h3>F1 Ridge Gourd</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=ridge-gourd" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Ash Gourd -->
+          <div class="product-card fade-in" data-category="Gourds">
+            <div class="product-img">
+              <img src="/assets/img_ash_gourd_01.png" alt="Ash Gourd">
+            </div>
+            <div class="product-info">
+              <h3>F1 Ash Gourd</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=ash-gourd" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+
+          <!-- Cluster Bean -->
+          <div class="product-card fade-in" data-category="pod">
+            <div class="product-img">
+              <img src="/assets/img_cluster_bean_16x9.png" alt="Cluster Bean">
+            </div>
+            <div class="product-info">
+              <h3>F1 Cluster Bean (Guar)</h3>
+              <p class="product-desc">Rich in dietary fiber, perfect for curries.</p>
+              <div class="product-meta">
+                <span>☀️ Full Sun</span>
+                <span>💧 Moderate</span>
+              </div>
+              <a href="/product.html?id=cluster-bean" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Winter Squash (Zucchini) -->
+          <div class="product-card fade-in" data-category="Gourds">
+            <div class="product-img">
+              <img src="/assets/img_zucchini.png" alt="Winter Squash (Zucchini)">
+            </div>
+            <div class="product-info">
+              <h3>Winter Squash (Zucchini)</h3>
+              <p class="product-desc">Tender, versatile, and high yielding.</p>
+              <div class="product-meta">
+                <span>☀️ Full Sun</span>
+                <span>💧 Frequent</span>
+              </div>
+              <a href="/product.html?id=winter-squash" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Beetroot -->
+          <div class="product-card fade-in" data-category="root">
+            <div class="product-img">
+              <img src="/assets/img_beetroot_16x9.png" alt="Beetroot">
+            </div>
+            <div class="product-info">
+              <h3>F1 Beetroot</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=beetroot" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Brinjal (Egg Plant) -->
+          <div class="product-card fade-in" data-category="fruit">
+            <div class="product-img">
+              <img src="/assets/img_brinjal_16x9.png" alt="Egg Plant">
+            </div>
+            <div class="product-info">
+              <h3>F1 Brinjal (Egg Plant)</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=egg-plant" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Chilli -->
+          <div class="product-card fade-in" data-category="fruit">
+            <div class="product-img">
+              <img src="/assets/img_chilli_16x9_v2.png" alt="Chilli">
+            </div>
+            <div class="product-info">
+              <h3>F1 Chilli</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=chilli" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Capsicum -->
+          <div class="product-card fade-in" data-category="fruit">
+            <div class="product-img">
+              <img src="/assets/img_capsicum_16x9.png" alt="Capsicum">
+            </div>
+            <div class="product-info">
+              <h3>F1 Capsicum</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=capsicum" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+
+          <!-- Beans -->
+          <div class="product-card fade-in" data-category="fruit">
+            <div class="product-img">
+              <img src="/assets/img_beans_16x9.png" alt="Beans">
+            </div>
+            <div class="product-info">
+              <h3>Beans</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=beans" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Coriander -->
+          <div class="product-card fade-in" data-category="leafy">
+            <div class="product-img">
+              <img src="/assets/img_coriander_16x9.png" alt="Coriander">
+            </div>
+            <div class="product-info">
+              <h3>Coriander</h3>
+              <p class="product-desc">Fresh aromatic leaves for garnishing.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=coriander" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Spinach -->
+          <div class="product-card fade-in" data-category="leafy">
+            <div class="product-img">
+              <img src="/assets/img_spinach_16x9.png" alt="Spinach">
+            </div>
+            <div class="product-info">
+              <h3>Spinach</h3>
+              <p class="product-desc">Iron-rich greens for healthy meals.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Frequent</span>
+              </div>
+              <a href="/product.html?id=spinach" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Onion -->
+          <div class="product-card fade-in" data-category="root">
+            <div class="product-img">
+              <img src="/assets/img_onion_16x9_v2.png" alt="Onion">
+            </div>
+            <div class="product-info">
+              <h3>Onion</h3>
+              <p class="product-desc">Pungent and flavorful, stores well.</p>
+              <div class="product-meta">
+                <span>☀️ Full Sun</span>
+                <span>💧 Moderate</span>
+              </div>
+              <a href="/product.html?id=onion" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Green Peas -->
+          <div class="product-card fade-in" data-category="pod">
+            <div class="product-img">
+              <img src="/assets/img_green_peas_16x9.png" alt="Green Peas">
+            </div>
+            <div class="product-info">
+              <h3>Green Peas</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=peas" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!-- Corn -->
+          <div class="product-card fade-in" data-category="pod">
+            <div class="product-img">
+              <img src="/assets/img_sweet_corn_16x9.png" alt="Sweet Corn">
+            </div>
+            <div class="product-info">
+              <h3>Sweet Corn</h3>
+              <p class="product-desc">Sweet and tender, grow on vines.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=corn" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
+
+          <!--Mustard -->
+          <div class="product-card fade-in" data-category="pod">
+            <div class="product-img">
+              <img src="/assets/img_mustard_16x9.png" alt="Mustard">
+            </div>
+            <div class="product-info">
+              <h3>Mustard (Rapeseed)</h3>
+              <p class="product-desc">Nutritious greens with pungent flavor.</p>
+              <div class="product-meta">
+                <span>⛅ Partial Shade</span>
+                <span>💧 Regular</span>
+              </div>
+              <a href="/product.html?id=rapeseed" class="btn btn-primary btn-sm">View Details</a>
+            </div>
+          </div>
+
 
         </div>
       </div>
@@ -324,7 +680,10 @@
         <div class="testimonials-grid">
           <div class="testimonial-card fade-in">
             <p class="testimonial-text">"The germination rate is incredible. I've never had such a bountiful harvest
-              before. Highly recommended!"</p>
+              before. Highly recommended!"
+              <br><br>
+              "अंकुरण दर अविश्वसनीय है। मैंने इससे पहले कभी इतनी भरपूर फसल नहीं देखी। अत्यधिक अनुशंसित!"
+            </p>
             <div class="testimonial-author">
               <h4>Rajesh Kumar</h4>
               <span>Organic Farmer</span>
@@ -332,10 +691,13 @@
           </div>
           <div class="testimonial-card fade-in">
             <p class="testimonial-text">"Naturegro seeds are the best in the market. The quality of the vegetables is
-              top-notch."</p>
+              top-notch."
+              <br><br>
+              "नेचरग्रो के बीज बाज़ार में सबसे अच्छे हैं। सब्ज़ी की पैदावार बहुत अच्छी है।"
+            </p>
             <div class="testimonial-author">
-              <h4>Sarah Jenkins</h4>
-              <span>Home Gardener</span>
+              <h4>Mohan Singh</h4>
+              <span>Farmer</span>
             </div>
           </div>
         </div>

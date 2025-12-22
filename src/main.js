@@ -62,8 +62,11 @@ function initPage() {
                 <div class="varieties-list">
                     ${product.varieties.map(v => `
                         <div class="variety-card">
-                            <h4>${v.name}</h4>
-                            <p>${v.desc}</p>
+                            <div class="variety-info">
+                                <h4>${v.name}</h4>
+                                <p>${v.desc}</p>
+                            </div>
+                            ${v.image ? `<img src="${v.image}" alt="${v.name}" class="variety-img">` : ''}
                         </div>
                     `).join('')}
                 </div>
@@ -262,6 +265,28 @@ function initPage() {
 
   // Re-attach navigation listeners
   attachNavigationListeners();
+
+  // Active Link Highlighting on Scroll
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (scrollY >= (sectionTop - 150)) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(current)) {
+        link.classList.add('active');
+      }
+    });
+  });
 }
 
 // Soft Navigation Logic

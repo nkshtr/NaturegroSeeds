@@ -90,11 +90,27 @@
     padding: var(--spacing-sm);
     border-radius: var(--radius-sm);
     border-left: 4px solid var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.variety-info {
+    flex: 1;
 }
 
 .variety-card h4 {
     margin-bottom: 0.25rem;
     font-size: 1.1rem;
+}
+
+.variety-img {
+    width: auto;
+    height: 155px;
+    border-radius: var(--radius-sm);
+    display: block;
+    flex-shrink: 0;
 }
 
 .variety-card p {

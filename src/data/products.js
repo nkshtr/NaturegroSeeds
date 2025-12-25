@@ -4,7 +4,7 @@ export const products = [
         name: 'F1 Tomato',
         category: 'fruit',
         image: '/assets/img_tomato_16x9.png',
-        description: 'Our Tomatoes are a classic favorite for any garden. These indeterminate vines produce an abundance of medium-sized, deep red fruits that are bursting with flavor. Perfect for slicing, salads, and canning.',
+        description: 'Year-Round Productivity. Superior Resistance.<br><br>Engineered for the professional grower, our F1 hybrids deliver elite performance across every season. These varieties combine high disease tolerance with an ultra-early harvest window, ensuring you hit the market first. With uniform fruit quality and high-yield stability, Naturegro F1s are the strategic choice for fresh market supply and industrial processing.',
         varieties: [
             { name: 'Big Mama', desc: 'Small, bite-sized fruits with high sugar content.' },
             { name: 'Roma HS', desc: 'Meaty flesh with few seeds, ideal for sauces.' },
@@ -16,7 +16,7 @@ export const products = [
         name: 'Crunchy Orange Carrot',
         category: 'root',
         image: '/assets/product-carrot.png',
-        description: 'Grow crisp, sweet carrots right in your backyard. These roots are rich in beta-carotene and have a satisfying crunch. They store well and are excellent for roasting, juicing, or eating raw.',
+        description: 'Premium Carrots: Built for Uniformity and High Yields<br><br>Maximise your harvest with carrots engineered for consistency and market appeal. Our varieties produce straight, blunt-tipped roots with smooth skins that wash easily and resist cracking. With a deep orange core and high brix (sugar) content, these carrots offer the perfect balance of "old-fashioned" crunch and modern durability. Excellent for long-term cold storage and high-volume fresh market sales.',
 
         varieties: [
             { name: 'Nantes', desc: 'Cylindrical and sweet, great for storage.' },
@@ -67,12 +67,27 @@ export const products = [
         category: 'fruit',
         image: '/assets/img_pumpkin_16x9.png',
         description: 'Our F1 Pumpkin varieties are vigorous vines producing high yields of uniform, flat-round fruits. Known for their excellent keeping quality and sweet, thick flesh, they are perfect for cooking and sweets.',
-        details: {
-            temperature: '20-30°C',
-            germination: '7-14 days',
-            maturity: '90-100 days',
-            sunlight: 'Full Sun',
-            water: 'Regular, deep watering'
+        practices: {
+            soilClimate: {
+                soil: "Well-drained sandy loam rich in organic matter. pH 6.0-7.5.",
+                climate: "Warm-season crop. Optimum temperature 20-30°C.",
+                consideration: "Requires lots of space for vines."
+            },
+            planting: {
+                sowing: "June-July (Rainy), Jan-March (Summer).",
+                rate: "1-1.5 kg/acre (Hybrids: 450-500g/acre).",
+                spacing: {
+                    row: "2-3 m",
+                    plant: "60-90 cm"
+                }
+            },
+            fertilizers: {
+                fym: "8-10 tons/acre.",
+                nitrogen: "40 kg/acre.",
+                phosphorus: "20 kg/acre.",
+                potash: "20 kg/acre.",
+                strategy: "Basal application of full P & K and 1/2 N. Top dress remaining N at flowering."
+            }
         },
         varieties: [
             { name: 'Arka Chandan', desc: 'Medium sized, flat round fruits with orange flesh.' },
@@ -84,7 +99,7 @@ export const products = [
         name: 'Green Broccoli',
         category: 'flower',
         image: '/assets/product-broccoli.png', // Placeholder
-        description: 'Harvest nutrient-packed broccoli heads from your garden. This vigorous variety produces large central heads and plenty of side shoots after the main harvest.',
+        description: 'Maximise Your Harvest Cycle<br><br>Engineered for vigor and high-density planting, our broccoli varieties deliver heavy, blue-green central heads that command premium market prices. The productivity doesn\'t stop at the first cut - our plants are bred for aggressive side-shoot production, providing a continuous secondary harvest that increases your total yield per acre.',
 
         varieties: [
             { name: 'Calabrese', desc: 'Traditional green sprouting broccoli.' },
@@ -109,7 +124,7 @@ export const products = [
         name: 'F1 Hybrid Cauliflower',
         category: 'flower',
         image: '/assets/img_cauliflower_16x9_v2.png',
-        description: 'Our premium F1 Hybrid Cauliflower varieties are selected for their adaptability to different seasons and superior curd quality. Whether for summer, rainy, or winter harvest, we have the perfect variety for your needs.',
+        description: 'Dominating the Seasons with Elite F1 Cauliflower<br><br>Achieve a perfect harvest regardless of the weather. Our F1 hybrids are specifically bred for climate adaptability, offering specialised varieties for the heat of summer, the humidity of the rainy season, and the crisp windows of winters. With excellent self-blanching leaf cover and heavy, snow-white curds, Naturegro hybrids ensure premium market pricing and high-yield stability year-round.',
         practices: {
             soilClimate: {
                 soil: "Cauliflowers can be successfully grown in a wide range of soils that are rich in organic matter.",
@@ -153,7 +168,7 @@ export const products = [
         name: 'OP Cauliflower (Research)',
         category: 'flower',
         image: '/assets/img_cauliflower_16x9_v3.png',
-        description: 'Our premium Cauliflower varieties are selected for their adaptability to different seasons and superior curd quality. Whether for summer, rainy, or winter harvest, we have the perfect variety for your needs.',
+        description: 'Resilient Yields. Proven Performance.<br><br>Our Research and Improved OP Cauliflower varieties are selected for the grower who demands reliability and cost-efficiency. Specifically bred for regional adaptability, these varieties thrive in diverse seasonal windows-from the high heat of summer to the monsoon rains. Experience consistent curd density and excellent field-holding ability with a seed that works as hard as you do.',
         practices: {
             soilClimate: {
                 soil: "Cauliflowers can be successfully grown in a wide range of soils that are rich in organic matter.",
@@ -197,7 +212,7 @@ export const products = [
         name: 'Radish',
         category: 'root',
         image: '/assets/product-f1-radish.png',
-        description: 'Our premium Radish varieties are known for their high yield, early maturity, and adaptability to various seasons. From the heat-tolerant Aarya-33 to the versatile Moonlight, we offer radishes with excellent root quality and crisp texture.',
+        description: 'Rapid Maturity. Exceptional Root Integrity.<br><br>Streamline your field turnover with our premium radish portfolio, engineered for high-density production and rapid cycles. From the heat-tolerant Aarya-33 - designed to maintain crispness in soaring temperatures - to the versatile Moonlight, our varieties deliver uniform, snow-white roots with a smooth skin finish. These radishes are bred to resist pithiness and bolting, ensuring a heavy, market-ready harvest in every season.',
 
         varieties: [
             {
@@ -223,7 +238,7 @@ export const products = [
         name: 'OP Radish',
         category: 'root',
         image: '/assets/product-op-radish.png',
-        description: 'Our Open-Pollinated (OP) Radish varieties are selected for their dual-purpose use, fast maturity, and adaptability. Whether for the spinach-like leaves of Palak-Patta or the heat tolerance of Pusa Chetki, these varieties offer excellent reliability for home and commercial growers.',
+        description: 'Maximise Every Acre: High-Vigor Dual-Purpose Radish<br><br>Our OP and Research-grade radish varieties are bred for the grower who demands more from their crop. Featuring the iconic Palak-Patta, prized for its tender, spinach-like foliage, and the legendary Pusa Chetki, engineered for extreme heat tolerance, these varieties offer unmatched versatility. Whether harvesting for high-quality greens or crisp, pungent roots, you can count on rapid maturity and consistent performance in the toughest environments.',
 
         varieties: [
             {
@@ -250,7 +265,7 @@ export const products = [
         name: 'F1 Bhindi (Okra)',
         category: 'pod',
         image: '/assets/img_bhindi.png',
-        description: 'Our F1 Hybrid Bhindi (Okra) varieties are expertly tailored for year-round cultivation, offering consistent yields and premium fruit quality. With high disease tolerance and early harvest, these varieties are perfect for both fresh market and commercial farming.',
+        description: 'Premium F1 Bhindi: Engineered for Market Dominance<br><br>Our F1 Bhindi (Okra) hybrids are bred for the professional grower who demands high-frequency harvests and superior fruit quality. These varieties produce attractive, dark green, slender pods that stay tender longer, ensuring maximum market value. With high tolerance to YVMV (Yellow Vein Mosaic Virus) and an early fruiting cycle, you can maintain a profitable, year-round supply for both local and export markets.',
         varieties: [
             {
                 name: 'AADRIKA (F1 Hybrid)',
@@ -269,14 +284,8 @@ export const products = [
         name: 'F1 Muskmelon',
         category: 'fruit',
         image: '/assets/img_muskmelon_16x9.png',
-        description: 'Enjoy the sweet, aromatic flavor of our F1 Hybrid Muskmelons. With distinct netting and salmon-orange flesh, these melons are a refreshing summer treat.',
-        details: {
-            temperature: '25-35°C',
-            germination: '5-10 days',
-            maturity: '70-80 days',
-            sunlight: 'Full Sun',
-            water: 'Regular, reduce near harvest'
-        },
+        description: 'Premium Netting. Superior Shelf Life.<br><br>Command the market with F1 hybrids engineered for high-value retail. <br>Our muskmelons are bred for the professional supply chain, featuring tight, uniform netting and a reinforced rind that ensures superior "shippability" and minimal post-harvest loss. Inside, its intense aroma and peak sugar levels (High Brix) last long after harvest. This extended shelf-stability makes it the preferred choice for long-distance transporters, wholesalers, and premium vendors who demand uncompromised quality from field to shelf.',
+
         varieties: [
             { name: 'Kundan', desc: 'Dense netting, deep salmon flesh, high sweetness.' },
             { name: 'Bobby', desc: 'Vigorous vine, excellent fruit setting, uniform size.' }
@@ -287,14 +296,8 @@ export const products = [
         name: 'F1 Watermelon',
         category: 'fruit',
         image: '/assets/img_watermelon_16x9.png',
-        description: 'Beat the heat with our sweet and juicy F1 Hybrid Watermelons. These vigorous vines produce large, oblong fruits with excellent shipping quality and disease resistance.',
-        details: {
-            temperature: '25-35°C',
-            germination: '5-10 days',
-            maturity: '80-90 days',
-            sunlight: 'Full Sun',
-            water: 'Regular, abundant moisture'
-        },
+        description: 'The Benchmark for Commercial Shipping<br><br>Maximise your seasonal returns with F1 hybrids engineered for the long haul. These vigorous vines produce heavy, oblong fruits with the "tough-rind" integrity required for long-distance transport without cracking. Inside, the deep-red, high-Brix flesh delivers the intense sweetness consumers demand, while built-in disease resistance ensures a clean, high-yielding field from vine to truck.',
+
         varieties: [
             { name: 'Sugar Baby', desc: 'Compact vines, round fruits, very sweet.' },
             { name: 'Crimson Sweet', desc: 'Large, striped oblong fruits, high brix.' }
@@ -476,14 +479,8 @@ export const products = [
         name: 'F1 Cabbage',
         category: 'flower',
         image: '/assets/img_cabbage.png',
-        description: 'Our F1 Cabbage varieties are known for their compact heads, uniform size, and excellent holding capacity. Crisp, sweet, and perfect for salads, slaws, and cooking.',
-        details: {
-            temperature: '15-20°C',
-            germination: '7-10 days',
-            maturity: '60-80 days',
-            sunlight: 'Full Sun',
-            water: 'Regular, consistent moisture'
-        },
+        description: 'The Standard in Market-Ready Uniformity<br><br>Scale your production with F1 hybrids engineered for precision. Our cabbage varieties deliver dense, compact heads with exceptional weight-to-volume ratios. Built for the rigours of commercial farming, these hybrids offer superior field-holding capacity, allowing you to time your harvest with market peaks without sacrificing head integrity or crunch.',
+
         varieties: [
             { name: 'Green Globe', desc: 'Round, dense green heads, good field holding.' },
             { name: 'Red Acre', desc: 'Compact round red heads, great for salads.' }
@@ -518,7 +515,7 @@ export const products = [
         name: 'F1 Cucumber',
         category: 'fruit',
         image: '/assets/img_cucumber_16x9.png',
-        description: 'Our F1 Cucumbers are crisp, cool, and refreshing. These vigorous vines produce uniform, high-quality fruits that are perfect for salads and snacking.',
+        description: 'Elite F1 Hybrids: High-Frequency Harvests, Premium Grade<br><br>Maximise your tunnel or field productivity with our high-vigor F1 cucumbers. Bred for the professional market, these vines deliver a continuous flush of uniform, cylindrical fruits with an attractive deep-green finish. With a focus on crunch and a guaranteed bitterness-free profile, our varieties ensure the consistent quality that premium retailers and salad processors demand.',
 
         varieties: [
             { name: 'Green Long', desc: 'Long, slender, dark green fruits.' },

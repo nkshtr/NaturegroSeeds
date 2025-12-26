@@ -121,6 +121,7 @@ function initPage() {
 
                 <div class="practice-block">
                     <h4>🧪 Manures and Fertilizers</h4>
+                    ${product.practices.fertilizers.fym ? `
                     <div class="table-responsive">
                         <table class="practices-table">
                             <thead>
@@ -149,8 +150,47 @@ function initPage() {
                             </tbody>
                         </table>
                     </div>
+                    ` : `
+                    <div class="practice-content">
+                         ${product.practices.fertilizers.basal ? `<p><strong>Basal Application:</strong> ${product.practices.fertilizers.basal}</p>` : ''}
+                         ${product.practices.fertilizers.topDressing ? `<p><strong>Top Dressing:</strong> ${product.practices.fertilizers.topDressing}</p>` : ''}
+                    </div>
+                    `}
                     <p class="practice-note"><strong>Application Strategy:</strong> ${product.practices.fertilizers.strategy}</p>
                 </div>
+                ${product.practices.irrigation ? `
+                <div class="practice-card full-width">
+                    <div class="practice-header">
+                        <i class="fas fa-water"></i>
+                        <h3>Irrigation</h3>
+                    </div>
+                    <div class="practice-content">
+                        <p>${product.practices.irrigation}</p>
+                    </div>
+                </div>
+                ` : ''}
+                ${product.practices.staking ? `
+                <div class="practice-card full-width">
+                    <div class="practice-header">
+                        <i class="fas fa-arrows-alt-v"></i>
+                        <h3>Staking</h3>
+                    </div>
+                    <div class="practice-content">
+                        <p>${product.practices.staking}</p>
+                    </div>
+                </div>
+                ` : ''}
+                ${product.practices.pruning ? `
+                <div class="practice-card full-width">
+                    <div class="practice-header">
+                        <i class="fas fa-cut"></i>
+                        <h3>Pruning & Side Shoots</h3>
+                    </div>
+                    <div class="practice-content">
+                        <p>${product.practices.pruning}</p>
+                    </div>
+                </div>
+                ` : ''}
             </div>
         `;
       } else {

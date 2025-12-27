@@ -295,7 +295,7 @@ function initPage() {
   });
 
   // Re-attach navigation listeners
-  attachNavigationListeners();
+  // attachNavigationListeners(); // Disabled to allow full page loads for correct styling
 
   // Active Link Highlighting on Scroll
   const sections = document.querySelectorAll('section');

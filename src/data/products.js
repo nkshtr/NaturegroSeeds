@@ -4,7 +4,7 @@ export const products = [
         name: 'F1 Tomato',
         category: 'fruit',
         image: '/assets/img_tomato_16x9.png',
-        description: 'Year-Round Productivity. Superior Resistance.<br><br>Engineered for the professional grower, our F1 hybrids deliver elite performance across every season. These varieties combine high disease tolerance with an ultra-early harvest window, ensuring you hit the market first. With uniform fruit quality and high-yield stability, Naturegro F1s are the strategic choice for fresh market supply and industrial processing.',
+        description: '<strong>Year-Round Productivity. Superior Resistance.</strong><br><br>Engineered for the professional grower, our F1 hybrids deliver elite performance across every season. These varieties combine high disease tolerance with an ultra-early harvest window, ensuring you hit the market first. With uniform fruit quality and high-yield stability, Naturegro F1s are the strategic choice for fresh market supply and industrial processing.',
         varieties: [
             { name: 'Big Mama', desc: 'Small, bite-sized fruits with high sugar content.' },
             { name: 'Roma HS', desc: 'Meaty flesh with few seeds, ideal for sauces.' },
@@ -38,10 +38,10 @@ export const products = [
     },
     {
         id: 'carrot',
-        name: 'Crunchy Orange Carrot',
+        name: 'F1 Carrot',
         category: 'root',
         image: '/assets/product-carrot.png',
-        description: 'Premium Carrots: Built for Uniformity and High Yields<br><br>Maximise your harvest with carrots engineered for consistency and market appeal. Our varieties produce straight, blunt-tipped roots with smooth skins that wash easily and resist cracking. With a deep orange core and high brix (sugar) content, these carrots offer the perfect balance of "old-fashioned" crunch and modern durability. Excellent for long-term cold storage and high-volume fresh market sales.',
+        description: '<strong>Premium Carrots: Built for Uniformity and High Yields</strong><br><br>Our varieties produce straight, blunt-tipped roots with smooth skins that wash easily and resist cracking. With a deep orange core and high brix (sugar) content, these carrots offer the perfect balance of "old-fashioned" crunch and modern durability. Excellent for long-term cold storage and high-volume fresh market sales.</strong>',
 
         varieties: [
             { name: 'Nantes', desc: 'Cylindrical and sweet, great for storage.' },
@@ -50,11 +50,22 @@ export const products = [
         ]
     },
     {
+        id: 'op-carrot',
+        name: 'OP Carrot',
+        category: 'root',
+        image: '/assets/product-carrot.png',
+        description: '<strong>Traditional Flavor, Reliable Performance.</strong><br><br>Our Open Pollinated carrot varieties are selected for their adaptability and excellent taste. These vigorous growers produce uniform, attractive roots that are perfect for home gardens and local markets. Rich in vitamins and beta-carotene, they offer that classic, sweet carrot flavor.',
+        varieties: [
+            { name: 'Pusa Kesar', desc: 'Deep red roots, high carotene content.' },
+            { name: 'Pusa Rudhira', desc: 'Red, long, slender roots.' }
+        ]
+    },
+    {
         id: 'spinach',
-        name: 'Giant Spinach',
+        name: 'Palak (Spinach)',
         category: 'leafy',
         image: '/assets/product-spinach.png',
-        description: 'A powerhouse of nutrition, our Giant Spinach produces large, dark green leaves that are tender and flavorful. It is slow to bolt and can be harvested as baby greens or full-sized leaves.',
+        description: '<strong>The "High-Yield" Specialist. The Versatile "Farm-to-Table" Choice. Short & Punchy.</strong><br><br>Our Palak (Spinach) is a slow-bolting powerhouse, producing massive, emerald leaves that remain tender and flavorful. Versatile enough for baby-leaf harvesting or full-growth maturity, it is the dependable choice for consistent, nutrient-dense greens.<br><strong>Farmer Focus:</strong> A high-performance, multi-cut variety designed for rapid regrowth and high biomass, ensuring more pickings per sowing and maximum market weight.',
 
         varieties: [
             { name: 'Bloomsdale', desc: 'Savoy type with crinkled leaves, cold hardy.' },
@@ -63,11 +74,22 @@ export const products = [
         ]
     },
     {
+        id: 'f1-onion',
+        name: 'F1 Onion',
+        category: 'bulb',
+        image: '/assets/img_onion_16x9_v2.png',
+        description: '<strong>Superior Bulbs, Long-Term Storage.</strong><br><br>Our F1 Hybrid Onion is bred for the commercial grower demanding high uniformity and disease resistance. These varieties produce large, globe-shaped bulbs with deep red, tight skins that resist damage during handling. With a high percentage of single centered bulbs and excellent keeping quality, this hybrid allows you to extend your sales window long after the harvest season.',
+        varieties: [
+            { name: 'Gulmohar', desc: 'Dark red, globe shaped, high pungency.' },
+            { name: 'Ellora', desc: 'Light red, uniform size, early maturity.' }
+        ]
+    },
+    {
         id: 'onion',
-        name: 'Red Onion',
+        name: 'OP Onion',
         category: 'bulb',
         image: '/assets/img_onion_16x9.png',
-        description: 'These Red Onions are known for their vibrant color and mild to pungent flavor. They are excellent for salads, grilling, and pickling. Long storage life makes them a staple for any pantry.',
+        description: '<strong>High-Quality Bulbs with Superior Dormancy</strong><br>Our open-pollinated onion varieties are celebrated for their intense color and a flavor profile that ranges from a crisp, mild bite to a bold, pungent finish. With high dry-matter content and multi-layered, tight-fitting skins, these onions are engineered for durability.<br><strong>Farmer Focus:</strong> Bred for excellent skin retention and bulb uniformity, ensuring a high-pack out rate and the ability to wait for peak market prices thanks to extended shelf life.',
 
         varieties: [
             { name: 'Red Baron', desc: 'Deep red skin, strong flavor.' },
@@ -109,10 +131,10 @@ export const products = [
     },
     {
         id: 'broccoli',
-        name: 'Green Broccoli',
+        name: 'F1 Broccoli',
         category: 'flower',
         image: '/assets/product-broccoli.png', // Placeholder
-        description: 'Maximise Your Harvest Cycle<br><br>Engineered for vigor and high-density planting, our broccoli varieties deliver heavy, blue-green central heads that command premium market prices. The productivity doesn\'t stop at the first cut - our plants are bred for aggressive side-shoot production, providing a continuous secondary harvest that increases your total yield per acre.',
+        description: '<strong>Maximise Your Harvest Cycle</strong><br><br>Engineered for vigor and high-density planting, our broccoli varieties deliver heavy, blue-green central heads that command premium market prices. The productivity doesn\'t stop at the first cut - our plants are bred for aggressive side-shoot production, providing a continuous secondary harvest that increases your total yield per acre.',
 
         varieties: [
             { name: 'Calabrese', desc: 'Traditional green sprouting broccoli.' },
@@ -121,10 +143,10 @@ export const products = [
     },
     {
         id: 'peas',
-        name: 'Sweet Green Peas',
+        name: 'Peas (Sweet Peas)',
         category: 'pod',
-        image: '/assets/product-spinach.png', // Placeholder
-        description: 'Nothing beats the taste of fresh peas straight from the pod. These vines are prolific producers of sweet, tender peas. Great for freezing or eating fresh.',
+        image: '/assets/img_green_peas_16x9.png', // Placeholder
+        description: '<strong>Sweet Green Peas: The Ultimate Cool-Season Treat</strong><br><br>Our sweet green peas are bred for maximum production and superior taste. These vigorous vines produce well-filled pods stuffed with deep-green, sugary peas. Known for their uniform size and "easy-shell" pods, they are the ideal choice for gardeners and growers who prioritize quality without the extra labor.<br><strong>Farmer Focus:</strong> High-yield potential with a heavy "first-flush" set and excellent tolerance to common wilts, providing a dependable, high-grade crop for both fresh retail and processing.',
 
         varieties: [
             { name: 'Garden Sweet', desc: 'Classic shelling peas.' },
@@ -278,7 +300,7 @@ export const products = [
         name: 'F1 Bhindi (Okra)',
         category: 'pod',
         image: '/assets/img_bhindi.png',
-        description: 'Premium F1 Bhindi: Engineered for Market Dominance<br><br>Our F1 Bhindi (Okra) hybrids are bred for the professional grower who demands high-frequency harvests and superior fruit quality. These varieties produce attractive, dark green, slender pods that stay tender longer, ensuring maximum market value. With high tolerance to YVMV (Yellow Vein Mosaic Virus) and an early fruiting cycle, you can maintain a profitable, year-round supply for both local and export markets.',
+        description: '<strong>Premium F1 Bhindi: Engineered for Market Dominance</strong><br><br>Our F1 Bhindi (Okra) hybrids are bred for the professional grower who demands high-frequency harvests and superior fruit quality. These varieties produce attractive, dark green, slender pods that stay tender longer, ensuring maximum market value. With high tolerance to YVMV (Yellow Vein Mosaic Virus) and an early fruiting cycle, you can maintain a profitable, year-round supply for both local and export markets.',
         varieties: [
             {
                 name: 'AADRIKA (F1 Hybrid)',
@@ -297,7 +319,7 @@ export const products = [
         name: 'F1 Muskmelon',
         category: 'fruit',
         image: '/assets/img_muskmelon_16x9.png',
-        description: '<strong>Premium Netting. Superior Shelf Life.</strong><br><br>Command the market with F1 hybrids engineered for high-value retail. <br>Our muskmelons are bred for the professional supply chain, featuring tight, uniform netting and a reinforced rind that ensures superior "shippability" and minimal post-harvest loss. Inside, its intense aroma and peak sugar levels (High Brix) last long after harvest. This extended shelf-stability makes it the preferred choice for long-distance transporters, wholesalers, and premium vendors who demand uncompromised quality from field to shelf.',
+        description: '<strong>Premium Netting. Superior Shelf Life.</strong><br><br>Our muskmelons are bred for the professional supply chain, featuring tight, uniform netting and a reinforced rind that ensures superior "shippability" and minimal post-harvest loss. Inside, its intense aroma and peak sugar levels (High Brix) last long after harvest. This extended shelf-stability makes it the preferred choice for long-distance transporters, wholesalers, and premium vendors who demand uncompromised quality from field to shelf.',
 
         varieties: [
             { name: 'Kundan', desc: 'Dense netting, deep salmon flesh, high sweetness.' },
@@ -317,24 +339,26 @@ export const products = [
         ],
         practices: {
             soilClimate: {
-                soil: "Well-drained sandy loam or riverbed soil.",
-                climate: "Hot and dry climate is best. Optimum temp 25-30°C.",
-                consideration: "Sensitive to frost and waterlogging."
+                soil: "Well drained medium black sandy loam soils and rich in organic matter.",
+                climate: "Warm weather with good sunshine is ideal. Low temperature and frost are detrimental.",
+                consideration: "Optimum temperature required for crop development."
             },
             planting: {
-                sowing: "Summer: Jan-March; Rainy: June-July (in specific areas).",
-                rate: "300-400 g/acre.",
+                sowing: "Southern India and plains: Aug-Nov; Northern India: Nov-Feb.",
+                rate: "750 – 1000 gm / Ha. (300-400 g/acre).",
                 spacing: {
-                    row: "2.0-2.5 m",
-                    plant: "45-60 cm"
+                    row: "Single row: 180 cm; Double row: 300 cm",
+                    plant: "60 cm (for both systems)"
                 }
             },
             fertilizers: {
-                basal: "FYM 20-25 t/ha. NPK 50:50:50 kg/ha.",
-                topDressing: "Apply N 30-40 kg/ha in splits at vining and fruit set.",
-                strategy: "Use fertigation for F1 hybrids for best results."
+                fym: "25-30 tons/ha (10 tons/ac).",
+                nitrogen: "100 kg/ha.",
+                phosphorus: "100 kg/ha.",
+                potash: "125 kg/ha.",
+                strategy: "Basal: Full FYM, P, K & 1/3 N. Top Dressing: Balance N in 2 splits (1 month after sowing & at flower initiation)."
             },
-            irrigation: "Regular irrigation every 5-7 days. Critical stages are flowering and fruit development. Avoid moisture stress."
+            irrigation: "Irrigate once in 3 to 5 days depending on soil moisture condition."
         }
     },
     {
@@ -366,7 +390,7 @@ export const products = [
         name: 'F1 Ridge Gourd',
         category: 'Gourds',
         image: '/assets/img_ridge_gourd_16x9.png',
-        description: '<strong>The Gold Standard for Color and Character.</strong><br><br>In the ridge gourd market, "sharp and dark" sells first. Our F1 Ridge Gourd is specifically bred to produce long, straight fruits with an intense dark green color and razor-sharp ridges that stay prominent long after harvest. These features are the primary indicators of quality for buyers and wholesalers. By planting this hybrid, you aren\'t just growing a crop; you\’re growing a premium product that commands the highest price at the auction.',
+        description: '<strong>The Gold Standard for Color and Character.</strong><br><br>Our F1 Ridge Gourd is specifically bred to produce long, straight fruits with an intense dark green color and razor-sharp ridges that stay prominent long after harvest. These features are the primary indicators of quality for buyers and wholesalers. By planting this hybrid, you aren\'t just growing a crop; you\’re growing a premium product that commands the highest price at the auction.',
 
         varieties: [
             { name: 'Long Green', desc: 'Extra long fruits, very tender.' },
@@ -378,7 +402,7 @@ export const products = [
         name: 'F1 Sponge Gourd',
         category: 'Gourds',
         image: '/assets/img_sponge_gourd_16x9.png',
-        description: 'The Fastest Path from Sowing to Selling.<br><br>In the competitive Sponge Gourd (Gilki) market, being first matters. Our F1 Sponge Gourd is bred for rapid early-stage growth and "early-burst" fruiting. These prolific vines start yielding days ahead of traditional varieties, allowing you to capture early-season prices when supply is low. The fruits are perfectly cylindrical and maintain a vibrant green hue that signals freshness to every buyer. For the farmer looking for a quick crop rotation and fast cash flow, this is the ultimate high-velocity hybrid.',
+        description: '<strong>The Fastest Path from Sowing to Selling.</strong><br><br>Our F1 Sponge Gourd is bred for rapid early-stage growth and "early-burst" fruiting. These prolific vines start yielding days ahead of traditional varieties, allowing you to capture early-season prices when supply is low. The fruits are perfectly cylindrical and maintain a vibrant green hue that signals freshness to every buyer. For the farmer looking for a quick crop rotation and fast cash flow, this is the ultimate high-velocity hybrid.',
 
         practices: {
             soilClimate: {
@@ -398,8 +422,13 @@ export const products = [
                 fym: "20-25 tons/ha.",
                 nitrogen: "20-30 kg/ha.",
                 phosphorus: "40-60 kg/ha.",
-            },
+                potash: "20-30 kg/ha."
+            }
         },
+        varieties: [
+            { name: 'F1 Special', desc: 'High yielding, cylindrical fruits.' },
+            { name: 'Early Green', desc: 'Early maturity, vibrant green skin.' }
+        ]
     },
     {
         id: 'ash-gourd',
@@ -526,7 +555,7 @@ export const products = [
     },
     {
         id: 'capsicum',
-        name: 'F1 Capsicum',
+        name: 'F1 Capsicum (Sweet Pepper)',
         category: 'fruit',
         image: '/assets/img_capsicum_16x9.png',
         description: '<strong>Tough Performance Under the Canopy.</strong><br><br>Our Our F1 Capsicum (Bell Peppers) are characterized by exceptionally thick walls, giving them the "heavy-in-hand" feel that wholesalers use to gauge quality. These glossy, blocky, deep-green peppers turn a vibrant red or yellow upon maturity and are highly resistant to diseases. Crisp and juicy, our F1 Capsicum is the perfect choice for both fresh salads and gourmet cooking.',
@@ -550,10 +579,10 @@ export const products = [
     },
     {
         id: 'corn',
-        name: 'Sweet Corn',
+        name: 'F1 Sweet Corn',
         category: 'pod',
         image: '/assets/img_sweet_corn_16x9.png',
-        description: 'Enjoy the taste of summer with our super sweet Corn varieties. These vigorous plants produce large, well-filled cobs with tender, juicy kernels.',
+        description: '<strong>Elite Sweet Corn: Bold Cobs, Maximum Flavor</strong><br><br>Maximize your output with our high-vigor Sweet Corn, designed for large-scale performance and consistent quality. Each plant produces oversized, well-filled ears with deep kernels and a small core, providing a higher recovery rate for both fresh sales and processing. The exceptional sweetness and crisp texture make this a top choice for roadside stands and supermarkets alike.<br><br><strong>Farmer Focus:</strong> Engineered for superior tip fill and tight husk cover to deter pests, ensuring a high-grade marketable yield with excellent "ship-ability" for long-distance transport.',
 
         varieties: [
             { name: 'Golden Bantam', desc: 'Classic yellow heirlooom, rich flavor.' },
@@ -586,7 +615,7 @@ export const products = [
     },
     {
         id: 'chilli',
-        name: 'F1 Chilli',
+        name: 'F1 Chilli (Hot Pepper)',
         category: 'fruit',
         image: '/assets/img_chilli_16x9.png',
         description: '<strong>Stay Green, Stay Productive: Built to Beat the Virus.</strong><br><br>Our F1 hybrids are selected for superior tolerance to common viruses and sucking pests, keeping your canopy green and your fruit sets heavy when other varieties fail. These are "flush-heavy" plants, meaning you get a concentrated burst of fruit that is easy to see and fast to pick. With a sturdy plant architecture that supports a massive load of upright or hanging peppers, you’ll see a significant increase in marketable yield per picking cycle.',
@@ -621,7 +650,7 @@ export const products = [
         name: 'French Beans',
         category: 'pod',
         image: '/assets/img_beans_16x9.png',
-        description: 'Our French Beans are bush-type varieties that are easy to grow and highly productive. The pods are stringless, tender, and perfect for steaming or stir-frying.',
+        description: '<strong>Premium Bush-Type Variety</strong><br><br>Our French beans are selected for their compact, bush-type growth, making them incredibly easy to manage and high-yielding. These pods are 100% stringless and stay tender longer, offering a crisp texture perfect for steaming, sautéing, or gourmet stir-fries.<br><strong>Farmer Focus:</strong> Engineered for uniform maturity and a concentrated harvest window to maximize your field efficiency and market turnaround.',
 
         varieties: [
             { name: 'Bush Blue Lake', desc: 'Classic, dark green, stringless pods.' },
@@ -633,7 +662,7 @@ export const products = [
         name: 'Coriander',
         category: 'leafy',
         image: '/assets/img_coriander_16x9.png',
-        description: 'Our aromatic Coriander varieties are slow-bolting and produce lush green leaves. Essential for garnishing and flavoring Indian dishes.',
+        description: '<strong>All-Season Lush Coriander. All-Season Lush Coriander.</strong><br><br>Tired of coriander going to seed too fast? Our slow-bolting varieties are selected for their vigor and heat tolerance. Expect consistent growth of tender, aromatic leaves that stay fresh and flavorful longer. A must-have staple for adding that signature "zing" to chutneys, dals, and salads.<br><strong>Farmer Focus:</strong> Uniform growth and excellent post-harvest shelf life make this variety a reliable choice for long-distance transport and market fresh-keeping.',
 
         varieties: [
             { name: 'Super Green', desc: 'Large leaves, slow to flower.' },

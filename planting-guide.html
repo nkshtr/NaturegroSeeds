@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planting Guide & Seed Count | Naturegro Seeds</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* 
+           Styles matching src/styles/style.css variables 
+           We include them here to avoid FOUC before main.js loads the global CSS 
+        */
+        :root {
+            --color-primary: #2E7D32;
+            --color-primary-dark: #1B5E20;
+            --color-primary-light: #4CAF50;
+            --color-secondary: #8D6E63;
+            --color-accent: #FFD54F;
+            --color-background: #F1F8E9;
+            --color-surface: #FFFFFF;
+            --color-text: #333333;
+            --color-text-light: #666666;
+            --color-border: #E0E0E0;
+
+            --font-family-heading: 'Outfit', sans-serif;
+            --font-family-body: 'Inter', sans-serif;
+
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: var(--font-family-body);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Navigation - Matches Index */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 0.8rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--color-primary-dark);
+            font-family: var(--font-family-heading);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-primary);
+            font-weight: 600;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-link:hover {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        /* Main Content */
+        main {
+            padding-top: 100px;
+            /* Navbar space */
+            padding-bottom: 4rem;
+        }
+
+        h1 {
+            font-family: var(--font-family-heading);
+            color: var(--color-primary-dark);
+            text-align: center;
+            margin-bottom: 0.5rem;
+            font-size: 2.25rem;
+        }
+
+        p.subtitle {
+            text-align: center;
+            color: var(--color-text-light);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        /* Enhanced Table Styles */
+        .table-wrapper {
+            background: var(--color-surface);
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            /* For border radius */
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .table-scroll {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+            /* Ensures readable width on mobile scroll */
+        }
+
+        thead {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        th {
+            font-family: var(--font-family-heading);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            padding: 1.25rem 1rem;
+            text-align: left;
+        }
+
+        td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--color-border);
+            color: var(--color-text);
+            font-size: 0.95rem;
+            vertical-align: middle;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8faf8;
+        }
+
+        tr:hover {
+            background-color: #f0f7f0;
+        }
+
+        /* Column Specifics */
+        td:first-child {
+            font-weight: 500;
+            color: var(--color-text-light);
+            text-align: center;
+        }
+
+        /* Sl.No */
+        th:first-child {
+            text-align: center;
+            width: 60px;
+        }
+
+        td:nth-child(2) {
+            font-weight: 600;
+            color: var(--color-primary-dark);
+        }
+
+        /* Crop */
+
+        /* Note Box */
+        .note-box {
+            margin-top: 2rem;
+            background-color: #FFF8E1;
+            /* Light yellow/amber */
+            border-left: 4px solid var(--color-accent);
+            padding: 1rem 1.5rem;
+            border-radius: 4px;
+            color: #795548;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .footer {
+            background-color: var(--color-primary-dark);
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="container">
+                <a href="/index.html" class="logo">
+                    <img src="/assets/logo.png" alt="Naturegro Seeds">
+                    <span>Naturegro Seeds</span>
+                </a>
+                <a href="/index.html" class="btn-link">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <h1>Planting Guide & Seed Count</h1>
+                <p class="subtitle">Reference guide for optimal spacing and seed rates per hectare.</p>
+
+                <div class="table-wrapper fade-in">
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Crop</th>
+                                    <th>Seeds / Gram<br><span
+                                            style="font-size: 0.75em; opacity: 0.8; font-weight: 400;">(Approx.)</span>
+                                    </th>
+                                    <th>Spacing</th>
+                                    <th>Seed Rate<br><span
+                                            style="font-size: 0.75em; opacity: 0.8; font-weight: 400;">(kg per Ha /
+                                            Acre)</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Tomato</td>
+                                    <td>250-280</td>
+                                    <td>80cm x 60cm</td>
+                                    <td>0.125 - 0.150 kg<br><span style="font-size:0.85em; color:#666">(50 – 60
+                                            gm/Acre)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Watermelon</td>
+                                    <td>25-30</td>
+                                    <td>200cm x 60cm</td>
+                                    <td>1 kg<br><span style="font-size:0.85em; color:#666">(300 – 400 gm/Acre)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Muskmelon</td>
+                                    <td>25-30</td>
+                                    <td>130-150cm x 60cm</td>
+                                    <td>1.25 - 1.5 kg<br><span style="font-size:0.85em; color:#666">(500 – 600
+                                            gm/Acre)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Chilli</td>
+                                    <td>160-180</td>
+                                    <td>60cm x 45cm</td>
+                                    <td>0.30 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Capsicum</td>
+                                    <td>160-180</td>
+                                    <td>45-60cm x 30cm</td>
+                                    <td>0.50 (OP)<br>0.30 (F1)</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Cauliflower</td>
+                                    <td>300</td>
+                                    <td>60cm x 30cm</td>
+                                    <td>0.350 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Broccoli</td>
+                                    <td>300</td>
+                                    <td>60cm x 30cm</td>
+                                    <td>0.28 - 0.30 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Cabbage</td>
+                                    <td>300</td>
+                                    <td>60cm x 30cm</td>
+                                    <td>0.350 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Okra</td>
+                                    <td>15-18</td>
+                                    <td>30cm x 15cm (OP)<br>60cm x 30cm (F1)</td>
+                                    <td>8 - 10 (OP)<br>5 - 6 (F1)</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Brinjal</td>
+                                    <td>240-270</td>
+                                    <td>90cm x 30cm</td>
+                                    <td>0.125 - 0.150 kg<br><span style="font-size:0.85em; color:#666">(50 – 60
+                                            gm/Acre)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Ridge Gourd</td>
+                                    <td>20-25</td>
+                                    <td>160-190cm x 60cm</td>
+                                    <td>1 – 1.5 kg<br><span style="font-size:0.85em; color:#666">(500 – 600
+                                            gm/Acre)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Bottle Gourd</td>
+                                    <td>15-20</td>
+                                    <td>180-200cm x 60cm</td>
+                                    <td>1.5 – 2.0 kg<br><span style="font-size:0.85em; color:#666">(600 – 800
+                                            gm/Acre)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>Bitter Gourd</td>
+                                    <td>10-15</td>
+                                    <td>150-170cm x 60cm</td>
+                                    <td>1 – 2.25 kg<br><span style="font-size:0.85em; color:#666">(750 – 900
+                                            gm/Acre)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>Sponge Gourd</td>
+                                    <td>20-25</td>
+                                    <td>160-170cm x 60cm</td>
+                                    <td>1.25 – 1.5 kg<br><span style="font-size:0.85em; color:#666">(500 – 600
+                                            gm/Acre)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>Carrot</td>
+                                    <td>700</td>
+                                    <td>10-15cm x 20cm</td>
+                                    <td>5 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>Cucumber</td>
+                                    <td>25-30</td>
+                                    <td>120-140cm x 60cm</td>
+                                    <td>1.25 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>Coriander</td>
+                                    <td>80-100</td>
+                                    <td>10-15cm x 10cm</td>
+                                    <td>30-40 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>Onion</td>
+                                    <td>280-300</td>
+                                    <td>30cm x 15 cm</td>
+                                    <td>8-10 (Direct sowing)<br>2 (Transplanted)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="note-box">
+                    <i class="fas fa-info-circle"></i>
+                    <span><strong>Note:</strong> The above mentioned values vary depending on variety, climate, soil
+                        type, and season.</span>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Naturegro Seeds. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
